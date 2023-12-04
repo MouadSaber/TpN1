@@ -10,20 +10,21 @@ namespace Tp1
     {
         static void Main(string[] args)
         {
-            List<Livre> Biblioth = new list<Livre>();
+            // la réservation mémoire des trois objets et l'appel du constructeur pour les initialiser :
             Livre livre1 = new Livre("c");
             Livre livre2 = new Livre("a");
             Livre livre3 = new Livre("b");
 
-            Biblioth.Add(livre1);
-            Biblioth.Add(livre2);
-            Biblioth.Add(livre3);
+            // la collection des objets dans un tableau pour simplifier le trie de ces derniers :
+           string Livres[] = {livre1.titre , livre2.titre , livre3.titre};
 
-            Biblioth.Sort();
+            // l'appel de méthode sort de la classe Array sur notre tableau de livres :
+            Array.Sort(Livres);
 
-            foreach (Livre livre in Biblioth)
+            // l'affichage de livre triés selon l'ordre alphabétique :
+            foreach (Livre livre in Livres)
             {
-                Console.WriteLine(livre.titre);
+                Console.WriteLine(Livres);
             }
         }
     }
