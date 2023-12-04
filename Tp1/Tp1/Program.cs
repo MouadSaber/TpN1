@@ -3,21 +3,14 @@ using System.Collections.Generic;
 
 namespace Tp1
 {
-    class Livre: IComparable <Livre>
+    class Livre
     {
         public string titre;
+        // le constructeur de classe Livre qui initialise l'attribut titre :
         public Livre(string t)
         { 
             titre = t;
         }
-        public int comparer(Livre autre) 
-        {
-            return string.Compare(titre, autre.titre);
-        }
 
-        public int CompareTo(Livre? other)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
