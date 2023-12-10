@@ -5,11 +5,16 @@ namespace Tp1
 {
     class Livre
     {
-        public string titre;
+        private string titre;
+        private string specialite;
+        private double prix;
         // le constructeur de classe Livre qui initialise l'attribut titre :
-        public Livre(string t)
+        public Livre(string titre, string specialite, double prix)
         { 
-            titre = t;
+            this.titre = titre;
+            this.specialite = specialite;
+            this.titre = titre;
+            
         }
 
     }
