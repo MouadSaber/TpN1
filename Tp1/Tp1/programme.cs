@@ -11,9 +11,9 @@ namespace Tp1
         static void Main(string[] args)
         {
             // la réservation mémoire des trois objets et l'appel du constructeur pour les initialiser :
-            Livre livre1 = new Livre("c");
-            Livre livre2 = new Livre("a");
-            Livre livre3 = new Livre("b");
+            Livre livre1 = new Livre("l'étranger", "la vie", 124.50);
+            Livre livre2 = new Livre("le dernier jour d'un condamné", "la vie", 120);
+            Livre livre3 = new Livre("le crime et le punishement", "la vie " , 101.75);
 
             // la collection des objets dans un tableau pour simplifier le trie de ces derniers :
            string Livres[] = {livre1.titre , livre2.titre , livre3.titre};
